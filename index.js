@@ -48,7 +48,7 @@ var Request = function(options) {
 	});
 };
 
-Request.prototype.__proto__ = process.EventEmitter.prototype;
+Request.prototype.__proto__ = require('events').prototype;
 
 Request.prototype.setEncoding = function(encoding) {
 	if (this.response) {
